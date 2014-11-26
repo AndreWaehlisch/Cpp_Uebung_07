@@ -33,7 +33,7 @@ double phi_rec( int m )
 	else if ( m > 1 )
 	{
 
-		for (int i = 1 ; i <= m  ; i++ )
+		for (int i = 1 ; i < m  ; i++ )
 		{
 			nP1 = nM1 - n;
 			nM1 = n;
@@ -42,9 +42,9 @@ double phi_rec( int m )
 
 		return nP1;
 	}
-	else if ( m < 0)
+	else 
 	{
-		for (int i = -1 ; i >= m ; i--)
+		for (int i = -1 ; i >= m-1 ; i--)
 		{
 			nM1 = nP1 + n;
 			nP1 = n;
@@ -56,10 +56,6 @@ double phi_rec( int m )
 
 }
 
-
-
-
-
 double phi_dir( int n )
 {
 	double phi = .5 * (sqrt(5) - 1) ;
@@ -70,10 +66,12 @@ int main ()
 {
 	ofstream file ( "golden.dat" , ios::trunc ) ;
 
-	for ( int n = -100 ; n < 100; n++)
-		file << n << '\t' << phi_rec(n) << '\t' << phi_dir(n) << endl;
+	for ( int n = 1 ; n < 100; n++)
+	  file << n << '\t' << abs(phi_rec(n)) << '\t' << phi_dir(n) << endl;
 
 
 	file.close();
+
+	//Ab ca n=11 weichen die rekursiv ermittelten Potenzen deutlich von den direkten Potenzen ab. Weitere Lösungen der Rekursionsvorschrit sind \phi = 0 und \phi \approx -1.618. 
 
 }
