@@ -88,7 +88,6 @@ int main ()
 
 	cout << "Bitte einen Anfangswert eingeben." << endl;
 	cin  >> x0;
-
 	r(x0);
 	cout << r.x << endl;
 
