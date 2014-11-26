@@ -2,8 +2,7 @@
 #include <cmath>
 using namespace std;
 
-template<class T>
-int goodNumber(T in)
+int goodNumber(const double in)
 {
 	if ( isinf(in) )
 	{
