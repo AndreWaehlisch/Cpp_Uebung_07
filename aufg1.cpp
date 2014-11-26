@@ -106,4 +106,8 @@ int main()
 			eminus *= 2;
 		}
 	}
+
+	// Eplus  ~ 2.22*10^(-16)
+	// Eminus ~ 1.11*10^(-16)
+	// Die beiden Werte unterscheiden sich um den Faktor 2. Für den Test mit Eminus ist das Ergebnis demnach numerisch genauer.
 }
