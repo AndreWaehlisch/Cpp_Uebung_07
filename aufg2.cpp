@@ -72,6 +72,6 @@ int main ()
 
 	file.close();
 
-	//Ab ca n=11 weichen die rekursiv ermittelten Potenzen deutlich von den direkten Potenzen ab. Weitere Lösungen der Rekursionsvorschrit sind \phi = 0 und \phi \approx -1.618.
+	//Ab ca n=11 weichen die rekursiv ermittelten Potenzen deutlich von den direkten berechneten Potenzen ab, vermutlich wegen dem numerischen Fehler der bei der Subtraktion entstehen kann. Weitere Lösungen der Rekursionsvorschrit sind \phi = 0 und \phi \approx -1.618.
 
 }
