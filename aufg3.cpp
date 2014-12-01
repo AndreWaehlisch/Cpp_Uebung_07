@@ -33,7 +33,7 @@ int main()
 		cout << "i=" << i << " x_i=" << x << endl;
 	}
 
-	// Die Werte x_1 bis x_10 wiederholen sich periodisch für die gewählten Parameter (sodass also x_1 = x11 etc.).
+	// Die Werte x_1 bis x_10 wiederholen sich periodisch für die gewählten Parameter (sodass also x_1 = x_11 etc.).
 
 	cout << "-----" << endl;
 

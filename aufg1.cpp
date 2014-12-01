@@ -51,7 +51,7 @@ int main()
 	cout << "Ln(+0.): " << goodNumber(log(+0.)) << endl; // nein
 	cout << "Ln(-0.): " << goodNumber(log(-0.)) << endl; // nein
 	cout << "1./0.: " << goodNumber(1. / 0.) << endl; // nein
-	cout << "Tan(Pi/2): " << goodNumber(tan(M_PI / 2.)) << endl; // ja (!)
+	cout << "Tan(Pi/2): " << goodNumber(tan(M_PI / 2.)) << endl; // (wegen numerischem Fehler, hier fälschlicherweise:) ja
 
 	////////////////////////////
 
@@ -109,5 +109,5 @@ int main()
 
 	// Eplus  ~ 2.22*10^(-16)
 	// Eminus ~ 1.11*10^(-16)
-	// Die beiden Werte unterscheiden sich um den Faktor 2. Für den Test mit Eminus ist das Ergebnis demnach numerisch genauer.
+	// Die beiden Werte unterscheiden sich um den Faktor 2. Für den Test mit Eminus ist das Ergebnis demnach numerisch besser.
 }
